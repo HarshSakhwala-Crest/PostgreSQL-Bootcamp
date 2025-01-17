@@ -1,0 +1,16 @@
+-- DELETING DATA FROM A TABLE
+SELECT * FROM customers;
+
+
+-- DELETE RECORDS BASED ON CONDITION
+DELETE FROM customers 
+WHERE first_name = 'Kevin';
+
+SELECT * FROM customers;
+
+
+-- DELETE ALL RECORDS
+DELETE FROM customers
+RETURNING *;
+
+SELECT * FROM customers;
